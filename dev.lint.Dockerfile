@@ -2,7 +2,7 @@ FROM golangci/golangci-lint:v1.30.0
 
 # Meta data
 LABEL maintainer="matthewgleich@gmail.com"
-LABEL description="project_description"
+LABEL description="🌲 golang port of Delgan's python loguru"
 
 # Copying over all the files
 COPY . /usr/src/app

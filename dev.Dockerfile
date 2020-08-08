@@ -2,7 +2,7 @@ FROM golang:1.14
 
 # Meta data:
 LABEL maintainer="matthewgleich@gmail.com"
-LABEL description="project_description"
+LABEL description="🌲 golang port of Delgan's python loguru"
 
 # Copying over all the files:
 COPY . /usr/src/app

@@ -11,7 +11,7 @@ build-docker-dev-lint:
 build-go:
 	go get -v -t -d ./...
 	go build -v .
-	rm project_name
+	rm go_loguru
 
 #########
 # Linting
@@ -30,8 +30,8 @@ lint-hadolint:
 	hadolint dev.Dockerfile
 	hadolint dev.lint.Dockerfile
 lint-in-docker:
-	docker build -f dev.lint.Dockerfile -t mattgleich/project_name:lint .
-	docker run mattgleich/project_name:lint
+	docker build -f dev.lint.Dockerfile -t mattgleich/go_loguru:lint .
+	docker run mattgleich/go_loguru:lint
 
 #########
 # Testing
@@ -41,8 +41,8 @@ test-go:
 	go get -v -t -d ./...
 	go test ./...
 test-in-docker:
-	docker build -f dev.Dockerfile -t mattgleich/project_name:test .
-	docker run mattgleich/project_name:test
+	docker build -f dev.Dockerfile -t mattgleich/go_loguru:test .
+	docker run mattgleich/go_loguru:test
 
 ##########
 # Grouping

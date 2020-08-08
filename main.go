@@ -1,7 +1,7 @@
 package main
 
-import "github.com/sirupsen/logrus"
+import "github.com/fatih/color"
 
 func main() {
-	logrus.Info("Testing testing")
+	color.Green("Hello World!")
 }

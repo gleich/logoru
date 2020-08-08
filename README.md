@@ -1,23 +1,21 @@
 <!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich"]:end -->
 
-# Run `init.py`
+# go_loguru
 
-# project_name
+🌲 golang port of Delgan's python loguru
 
-project_description
-
-![build](https://github.com/github_username/project_name/workflows/build/badge.svg)
-![test](https://github.com/github_username/project_name/workflows/test/badge.svg)
-![lint](https://github.com/github_username/project_name/workflows/lint/badge.svg)
-![release](https://github.com/github_username/project_name/workflows/release/badge.svg)
+![build](https://github.com/Matt-Gleich/go_loguru/workflows/build/badge.svg)
+![test](https://github.com/Matt-Gleich/go_loguru/workflows/test/badge.svg)
+![lint](https://github.com/Matt-Gleich/go_loguru/workflows/lint/badge.svg)
+![release](https://github.com/Matt-Gleich/go_loguru/workflows/release/badge.svg)
 
 ## 🙌 Contributing
 
-Before contributing please read the [CONTRIBUTING.md file](https://github.com/github_username/project_name/CONTRIBUTING.md)
+Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/go_loguru/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-## 👥 Contributors
 
+## 👥 Contributors
 
 - **[@Matt-Gleich](https://github.com/Matt-Gleich)**
 
