@@ -1,4 +1,4 @@
-module github.com/github_username/go_loguru
+module github.com/Matt-Gleich/go_loguru
 
 go 1.14
 

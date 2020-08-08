@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/Matt-Gleich/go_loguru/loguru"
 	"github.com/fatih/color"
-	"github.com/github_username/go_loguru/loguru"
 )
 
 func main() {
