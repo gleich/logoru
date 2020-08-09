@@ -2,16 +2,10 @@
 # Building
 ##########
 
-build-docker-prod:
-	docker build .
 build-docker-dev:
 	docker build -f dev.Dockerfile .
 build-docker-dev-lint:
 	docker build -f dev.lint.Dockerfile .
-build-go:
-	go get -v -t -d ./...
-	go build -v .
-	rm go_loguru
 
 #########
 # Linting
@@ -26,7 +20,6 @@ lint-gomod:
 lint-goreleaser:
 	goreleaser check
 lint-hadolint:
-	hadolint Dockerfile
 	hadolint dev.Dockerfile
 	hadolint dev.lint.Dockerfile
 lint-in-docker:
@@ -55,4 +48,4 @@ docker-test: test-in-docker
 local-lint: lint-golangci lint-goreleaser lint-hadolint lint-gomod
 docker-lint: lint-in-docker
 # Build
-local-build: build-docker-prod build-docker-dev build-docker-dev-lint
+local-build: build-docker-dev build-docker-dev-lint
