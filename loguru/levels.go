@@ -2,11 +2,39 @@ package loguru
 
 import "github.com/fatih/color"
 
-var levels = []string{"DEBUG", "SUCCESS", "ERROR", "INFO"}
+var levels = []string{"DEBUG", "INFO", "SUCCESS", "WARNING", "ERROR", "CRITICAL"}
 
 // Output a debugging message
 func Debug(msg string) error {
-	c := color.FgGreen
-	err := output(levels[0], &c, msg)
+	err := output(levels[0], color.New(color.FgBlue, color.Bold), msg)
+	return err
+}
+
+// Output an info message
+func Info(msg string) error {
+	err := output(levels[1], color.New(color.FgWhite, color.Bold), msg)
+	return err
+}
+
+// Output a success message
+func Success(msg string) error {
+	err := output(levels[1], color.New(color.FgGreen, color.Bold), msg)
+	return err
+}
+
+// Output a warning message
+func Warning(msg string) error {
+	err := output(levels[3], color.New(color.FgYellow, color.Bold), msg)
+	return err
+}
+
+// Output an error message
+func Error(msg string) error {
+	err := output(levels[4], color.New(color.FgRed, color.Bold), msg)
+	return err
+}
+
+func Critical(msg string) error {
+	err := output(levels[5], color.New(color.FgWhite, color.BgRed, color.Bold), msg)
 	return err
 }

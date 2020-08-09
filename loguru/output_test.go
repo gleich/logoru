@@ -11,8 +11,7 @@ import (
 )
 
 func TestOutput(t *testing.T) {
-	c := color.FgGreen
-	err := output("DEBUG", &c, "Testing testing")
+	err := output("DEBUG", color.New(color.FgGreen, color.Bold), "Testing testing")
 	if err != nil {
 		t.Error(err)
 	}

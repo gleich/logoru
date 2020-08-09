@@ -11,18 +11,18 @@ import (
 )
 
 // Core output function for loguru
-func output(level string, c *color.Attribute, message string) error {
+func output(level string, levelColor *color.Color, message string) error {
 	green := color.New(color.FgGreen)
-	boldColor := color.New(*c, color.Bold)
 	green.Print(genTime())
 	fmt.Print(" | ")
 	fixedSpacing, err := addSpacing(levels, level)
 	if err != nil {
 		return err
 	}
-	boldColor.Print(fixedSpacing)
+	levelColor.Print(fixedSpacing)
 	fmt.Print(" | ")
-	boldColor.Println(message)
+	levelColor.Print(message)
+	fmt.Println()
 	return nil
 }
 
