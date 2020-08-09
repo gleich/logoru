@@ -1,5 +1,16 @@
 package main
 
+import (
+	"fmt"
+	"os"
+
+	"github.com/Matt-Gleich/go_loguru/loguru"
+)
+
 func main() {
-	// fmt.Println(loguru.GenTime())
+	err := loguru.Debug("Hello World!")
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 }

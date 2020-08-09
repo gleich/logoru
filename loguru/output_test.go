@@ -12,7 +12,23 @@ import (
 
 func TestOutput(t *testing.T) {
 	c := color.FgGreen
-	output("DEBUG", &c, "Testing testing")
+	err := output("DEBUG", &c, "Testing testing")
+	if err != nil {
+		t.Error(err)
+	}
+}
+
+func TestAddSpacing(t *testing.T) {
+	sameInstance, err := addSpacing([]string{"test", "test"}, "test")
+	if err != nil {
+		t.Error(err)
+	}
+	assert.Equal(t, sameInstance, "TEST")
+	differentInstance, err := addSpacing([]string{"testtest", "test"}, "test")
+	if err != nil {
+		t.Error(err)
+	}
+	assert.Equal(t, differentInstance, "TEST    ")
 }
 
 func TestGenTime(t *testing.T) {

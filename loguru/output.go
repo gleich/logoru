@@ -1,22 +1,56 @@
 package loguru
 
 import (
+	"errors"
 	"fmt"
 	"strconv"
+	"strings"
 	"time"
 
 	"github.com/fatih/color"
 )
 
 // Core output function for loguru
-func output(level string, c *color.Attribute, message string) {
+func output(level string, c *color.Attribute, message string) error {
 	green := color.New(color.FgGreen)
 	boldColor := color.New(*c, color.Bold)
 	green.Print(genTime())
 	fmt.Print(" | ")
-	boldColor.Print(level)
+	fixedSpacing, err := addSpacing(levels, level)
+	if err != nil {
+		return err
+	}
+	boldColor.Print(fixedSpacing)
 	fmt.Print(" | ")
 	boldColor.Println(message)
+	return nil
+}
+
+// Add spacing to align the columns
+func addSpacing(levels []string, level string) (string, error) {
+	var found bool
+	for _, tempLevel := range levels {
+		if strings.EqualFold(tempLevel, level) {
+			found = true
+		}
+	}
+	if !found {
+		return "", errors.New("Level " + level + " not found in levels")
+	}
+
+	var maxLen int
+	for _, tempLevel := range levels {
+		levelLen := len(tempLevel)
+		if levelLen > maxLen {
+			maxLen = levelLen
+		}
+	}
+
+	fixedLevel := level
+	for i := len(level); i < maxLen; i++ {
+		fixedLevel = fixedLevel + " "
+	}
+	return strings.ToUpper(fixedLevel), nil
 }
 
 // Generate the time output for loguru
