@@ -1,22 +1,22 @@
 <!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich"]:end -->
 
-# go_loguru
+# logoru
 
 🌲 golang port of Delgan's python loguru
 
-![build](https://github.com/Matt-Gleich/go_loguru/workflows/build/badge.svg)
-![test](https://github.com/Matt-Gleich/go_loguru/workflows/test/badge.svg)
-![lint](https://github.com/Matt-Gleich/go_loguru/workflows/lint/badge.svg)
+![build](https://github.com/Matt-Gleich/logoru/workflows/build/badge.svg)
+![test](https://github.com/Matt-Gleich/logoru/workflows/test/badge.svg)
+![lint](https://github.com/Matt-Gleich/logoru/workflows/lint/badge.svg)
 
 ## 🚀 Install
 
 Run the following command in your terminal:
 
 ```txt
-go get -u github.com/Matt-Gleich/go_loguru/loguru
+go get -u github.com/Matt-Gleich/logoru
 ```
 
-## 📝 Documentation [![GoDoc](https://godoc.org/github.com/Matt-Gleich/go_loguru/loguru?status.svg)](https://godoc.org/github.com/Matt-Gleich/go_loguru/loguru)
+## 📝 Documentation [![GoDoc](https://godoc.org/github.com/Matt-Gleich/logoru?status.svg)](https://godoc.org/github.com/Matt-Gleich/logoru)
 
 ### `func Debug`
 
@@ -32,10 +32,10 @@ Output a debugging message
 package main
 
 
-import "github.com/Matt-Gleich/go_loguru/loguru"
+import "github.com/Matt-Gleich/logoru"
 
 func main() {
-    loguru.Debug("Here is a debug message")
+    logoru.Debug("Here is a debug message")
 }
 ```
 
@@ -57,10 +57,10 @@ Output an info message
 package main
 
 
-import "github.com/Matt-Gleich/go_loguru/loguru"
+import "github.com/Matt-Gleich/logoru"
 
 func main() {
-    loguru.Info("Here is an info message")
+    logoru.Info("Here is an info message")
 }
 ```
 
@@ -82,10 +82,10 @@ Output a success message
 package main
 
 
-import "github.com/Matt-Gleich/go_loguru/loguru"
+import "github.com/Matt-Gleich/logoru"
 
 func main() {
-    loguru.Success("Here is a success message")
+    logoru.Success("Here is a success message")
 }
 ```
 
@@ -107,10 +107,10 @@ Output a warning message
 package main
 
 
-import "github.com/Matt-Gleich/go_loguru/loguru"
+import "github.com/Matt-Gleich/logoru"
 
 func main() {
-    loguru.Warning("Here is a warning message")
+    logoru.Warning("Here is a warning message")
 }
 ```
 
@@ -132,10 +132,10 @@ Output a error message
 package main
 
 
-import "github.com/Matt-Gleich/go_loguru/loguru"
+import "github.com/Matt-Gleich/logoru"
 
 func main() {
-    loguru.Error("Here is an error message")
+    logoru.Error("Here is an error message")
 }
 ```
 
@@ -157,10 +157,10 @@ Output a critical message
 package main
 
 
-import "github.com/Matt-Gleich/go_loguru/loguru"
+import "github.com/Matt-Gleich/logoru"
 
 func main() {
-    loguru.Critical("Here is a critical message")
+    logoru.Critical("Here is a critical message")
 }
 ```
 
@@ -170,7 +170,7 @@ Output:
 
 ## 🙌 Contributing
 
-Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/go_loguru/CONTRIBUTING.md)
+Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/logoru/blob/master/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 

@@ -1,4 +1,4 @@
-package loguru
+package logoru
 
 import "github.com/fatih/color"
 

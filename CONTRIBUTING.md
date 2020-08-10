@@ -1,6 +1,6 @@
 # Contributing
 
-👋 Welcome to go_loguru! Thank you for showing interest in contributing to go_loguru, we would love to have your contribution. Below are some requirements for contributing. Please read carefully!
+👋 Welcome to logoru! Thank you for showing interest in contributing to logoru, we would love to have your contribution. Below are some requirements for contributing. Please read carefully!
 
 ## 🐛 Requesting Features/Reporting Bugs
 

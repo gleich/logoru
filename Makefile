@@ -23,8 +23,8 @@ lint-hadolint:
 	hadolint dev.Dockerfile
 	hadolint dev.lint.Dockerfile
 lint-in-docker:
-	docker build -f dev.lint.Dockerfile -t mattgleich/go_loguru:lint .
-	docker run mattgleich/go_loguru:lint
+	docker build -f dev.lint.Dockerfile -t mattgleich/logoru:lint .
+	docker run mattgleich/logoru:lint
 
 #########
 # Testing
@@ -34,8 +34,8 @@ test-go:
 	go get -v -t -d ./...
 	go test ./...
 test-in-docker:
-	docker build -f dev.Dockerfile -t mattgleich/go_loguru:test .
-	docker run mattgleich/go_loguru:test
+	docker build -f dev.Dockerfile -t mattgleich/logoru:test .
+	docker run mattgleich/logoru:test
 
 ##########
 # Grouping
