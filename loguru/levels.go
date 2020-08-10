@@ -18,7 +18,7 @@ func Info(msg string) error {
 
 // Output a success message
 func Success(msg string) error {
-	err := output(levels[1], color.New(color.FgGreen, color.Bold), msg)
+	err := output(levels[2], color.New(color.FgGreen, color.Bold), msg)
 	return err
 }
 
@@ -34,6 +34,7 @@ func Error(msg string) error {
 	return err
 }
 
+// Output a critical message
 func Critical(msg string) error {
 	err := output(levels[5], color.New(color.FgWhite, color.BgRed, color.Bold), msg)
 	return err
