@@ -2,7 +2,7 @@
 
 # logoru
 
-🌲 golang port of Delgan's python loguru
+🌲 golang port of [Delgan's python loguru](https://github.com/Delgan/loguru)
 
 ![build](https://github.com/Matt-Gleich/logoru/workflows/build/badge.svg)
 ![test](https://github.com/Matt-Gleich/logoru/workflows/test/badge.svg)
@@ -173,8 +173,8 @@ Output:
 Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/logoru/blob/master/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-## 👥 Contributors
 
+## 👥 Contributors
 
 - **[@Matt-Gleich](https://github.com/Matt-Gleich)**
 
