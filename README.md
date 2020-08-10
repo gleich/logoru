@@ -1,4 +1,4 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich", "ImgBotApp"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich"]:end -->
 
 # logoru
 
@@ -177,7 +177,5 @@ Before contributing please read the [CONTRIBUTING.md file](https://github.com/Ma
 
 
 - **[@Matt-Gleich](https://github.com/Matt-Gleich)**
-
-- **[@ImgBotApp](https://github.com/ImgBotApp)**
 
 <!-- DO NOT REMOVE - contributor_list:end -->
