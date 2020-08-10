@@ -7,7 +7,6 @@
 ![build](https://github.com/Matt-Gleich/go_loguru/workflows/build/badge.svg)
 ![test](https://github.com/Matt-Gleich/go_loguru/workflows/test/badge.svg)
 ![lint](https://github.com/Matt-Gleich/go_loguru/workflows/lint/badge.svg)
-![release](https://github.com/Matt-Gleich/go_loguru/workflows/release/badge.svg)
 
 ## 🚀 Install
 
