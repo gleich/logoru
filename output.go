@@ -11,7 +11,7 @@ import (
 )
 
 // Core output function for loguru
-func output(level string, levelColor *color.Color, message string) error {
+func output(level string, levelColor *color.Color, message interface{}) error {
 	green := color.New(color.FgGreen)
 	green.Print(genTime())
 	fmt.Print(" | ")
