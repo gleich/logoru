@@ -21,7 +21,7 @@ go get -u github.com/Matt-Gleich/logoru
 ### `func Debug`
 
 ```go
-func Debug(msg string) error
+func Debug(msg interface{})
 ```
 
 Output a debugging message
@@ -46,7 +46,7 @@ Output:
 ### `func Info`
 
 ```go
-func Info(msg string) error
+func Info(msg interface{})
 ```
 
 Output an info message
@@ -71,7 +71,7 @@ Output:
 ### `func Success`
 
 ```go
-func Info(msg string) error
+func Success(msg interface{})
 ```
 
 Output a success message
@@ -96,7 +96,7 @@ Output:
 ### `func Warning`
 
 ```go
-func Info(msg string) error
+func Warning(msg interface{})
 ```
 
 Output a warning message
@@ -121,7 +121,7 @@ Output:
 ### `func Error`
 
 ```go
-func Error(msg string) error
+func Error(msg interface{})
 ```
 
 Output a error message
@@ -146,7 +146,7 @@ Output:
 ### `func Critical`
 
 ```go
-func Critical(msg string) error
+func Critical(msg interface{})
 ```
 
 Output a critical message
@@ -173,8 +173,8 @@ Output:
 Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/logoru/blob/master/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-## 👥 Contributors
 
+## 👥 Contributors
 
 - **[@Matt-Gleich](https://github.com/Matt-Gleich)**
 
