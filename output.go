@@ -11,7 +11,7 @@ import (
 )
 
 // Core output function for loguru
-func output(level string, levelColor *color.Color, message interface{}) error {
+func output(level string, levelColor *color.Color, message ...interface{}) error {
 	green := color.New(color.FgGreen)
 	green.Print(genTime())
 	fmt.Print(" | ")
@@ -21,7 +21,11 @@ func output(level string, levelColor *color.Color, message interface{}) error {
 	}
 	levelColor.Print(fixedSpacing)
 	fmt.Print(" | ")
-	levelColor.Print(message)
+	joinedMessage := ""
+	for _, messageChunk := range message {
+		joinedMessage = fmt.Sprintf(joinedMessage+" %v", messageChunk)
+	}
+	levelColor.Print(joinedMessage)
 	fmt.Println()
 	return nil
 }
