@@ -36,6 +36,7 @@ import "github.com/Matt-Gleich/logoru"
 
 func main() {
     logoru.Debug("Here is a debug message")
+    logoru.Debug("Hello", "World")
 }
 ```
 
@@ -61,6 +62,7 @@ import "github.com/Matt-Gleich/logoru"
 
 func main() {
     logoru.Info("Here is an info message")
+    logoru.Info("Hello", "World")
 }
 ```
 
@@ -86,6 +88,7 @@ import "github.com/Matt-Gleich/logoru"
 
 func main() {
     logoru.Success("Here is a success message")
+    logoru.Success("Hello", "World")
 }
 ```
 
@@ -111,6 +114,7 @@ import "github.com/Matt-Gleich/logoru"
 
 func main() {
     logoru.Warning("Here is a warning message")
+    logoru.Warning("Hello", "World")
 }
 ```
 
@@ -136,6 +140,7 @@ import "github.com/Matt-Gleich/logoru"
 
 func main() {
     logoru.Error("Here is an error message")
+    logoru.Error("Hello", "World")
 }
 ```
 
@@ -161,6 +166,7 @@ import "github.com/Matt-Gleich/logoru"
 
 func main() {
     logoru.Critical("Here is a critical message")
+    logoru.Critical("Hello", "World")
 }
 ```
 
