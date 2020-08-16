@@ -23,7 +23,7 @@ func output(level string, levelColor *color.Color, message ...interface{}) error
 	fmt.Print(" | ")
 	joinedMessage := ""
 	for _, messageChunk := range message {
-		joinedMessage = fmt.Sprintf(joinedMessage+" %v", messageChunk)
+		joinedMessage = strings.TrimLeft(fmt.Sprintf(joinedMessage+" %v", messageChunk), " ")
 	}
 	levelColor.Print(joinedMessage)
 	fmt.Println()
