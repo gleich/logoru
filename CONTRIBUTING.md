@@ -1,6 +1,6 @@
 # Contributing
 
-👋 Welcome to logoru! Thank you for showing interest in contributing to logoru, we would love to have your contribution. Below are some requirements for contributing. Please read carefully!
+👋 Welcome to new_release! Thank you for showing interest in contributing to new_release, we would love to have your contribution. Below are some details on how to contribute to new_release. Please read carefully!
 
 ## 🐛 Requesting Features/Reporting Bugs
 
@@ -19,7 +19,7 @@ This project uses [golangci-lint](https://github.com/golangci/golangci-lint) for
 
 1. Make an issue (see above) and check to make sure what you are trying to add/change doesn't already exist.
 2. Create a branch with the name being the issue number. If you don't have contributor access just fork the repo.
-3. Add code.
+3. Make the changes.
 4. Validate code. See checking code section below 👇.
 5. Make the pull request!
 6. Now someone on the team will review your PR. Congrats!
@@ -43,4 +43,5 @@ Once you have those installed please run `make local-test` and `make local-lint`
 
 ## ℹ️ General
 
-- When you take on an issue please set yourself as the assignee.
+- When you take on an issue please set yourself as the assignee or leave a comment letting maintainers know that you are a going to work on it.
+- This project syncs files from other repos. To check where certain files come from check the `fsync.yml` file. This means if you wanna change that file you need to change the file from the source repo.
