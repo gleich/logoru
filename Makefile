@@ -3,9 +3,9 @@
 ##########
 
 build-docker-dev:
-	docker build -f dev.Dockerfile .
+	docker build -f docker/dev.Dockerfile -t mattgleich/logoru:test .
 build-docker-dev-lint:
-	docker build -f dev.lint.Dockerfile .
+	docker build -f docker/dev.lint.Dockerfile -t mattgleich/logoru:lint .
 
 #########
 # Linting
@@ -20,10 +20,9 @@ lint-gomod:
 lint-goreleaser:
 	goreleaser check
 lint-hadolint:
-	hadolint dev.Dockerfile
-	hadolint dev.lint.Dockerfile
-lint-in-docker:
-	docker build -f dev.lint.Dockerfile -t mattgleich/logoru:lint .
+	hadolint docker/dev.Dockerfile
+	hadolint docker/dev.lint.Dockerfile
+lint-in-docker: build-docker-dev-lint
 	docker run mattgleich/logoru:lint
 
 #########
@@ -33,8 +32,7 @@ lint-in-docker:
 test-go:
 	go get -v -t -d ./...
 	go test ./...
-test-in-docker:
-	docker build -f dev.Dockerfile -t mattgleich/logoru:test .
+test-in-docker: build-docker-dev
 	docker run mattgleich/logoru:test
 
 ##########
