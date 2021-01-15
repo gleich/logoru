@@ -6,7 +6,14 @@ import (
 	"github.com/fatih/color"
 )
 
-var levels = []string{"DEBUG", "INFO", "SUCCESS", "WARNING", "ERROR", "CRITICAL"}
+var levels = []string{
+	" DEBUG  ",
+	" INFO   ",
+	"SUCCESS ",
+	"WARNING ",
+	" ERROR  ",
+	"CRITICAL",
+}
 
 // Output a debugging message
 func Debug(msg ...interface{}) {
