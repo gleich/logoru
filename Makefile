@@ -17,8 +17,6 @@ lint-gomod:
 	go mod tidy
 	git diff --exit-code go.mod
 	git diff --exit-code go.sum
-lint-goreleaser:
-	goreleaser check
 lint-hadolint:
 	hadolint docker/dev.Dockerfile
 	hadolint docker/dev.lint.Dockerfile
@@ -43,7 +41,7 @@ test-in-docker: build-docker-dev
 local-test: test-go
 docker-test: test-in-docker
 # Linting
-local-lint: lint-golangci lint-goreleaser lint-hadolint lint-gomod
+local-lint: lint-golangci lint-hadolint lint-gomod
 docker-lint: lint-in-docker
 # Build
 local-build: build-docker-dev build-docker-dev-lint

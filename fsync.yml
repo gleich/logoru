@@ -1,13 +1,13 @@
 commit_message: 🔄 Update file via sync
 replace:
   - before: project_name
-    after: new_release
+    after: logoru
   - before: project_description
-    after: 📦 go package to check for a new GitHub release
+    after: "🌲 golang port of Delgan's python loguru"
   - before: github_username
     after: Matt-Gleich
   - before: project_author_email
-    after: matthewgleich@gmail.com
+    after: email@mattglei.ch
   - before: docker_username
     after: mattgleich
   - before: project_author_full_name
@@ -17,8 +17,6 @@ files:
     source: https://github.com/Matt-Gleich/go_template/blob/master/.gitignore
   - path: LICENSE.md
     source: https://github.com/Matt-Gleich/Matt-Gleich/blob/master/standard_documents/licenses/MIT_LICENSE.md
-  - path: docker/dev.lint.Dockerfile
-    source: https://github.com/Matt-Gleich/go_template/blob/master/dev.lint.Dockerfile
   - path: docker/dev.Dockerfile
     source: https://github.com/Matt-Gleich/go_template/blob/master/dev.Dockerfile
   - path: CONTRIBUTING.md

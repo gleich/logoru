@@ -1,8 +1,8 @@
 FROM golang:1.15
 
 # Meta data:
-LABEL maintainer="matthewgleich@gmail.com"
-LABEL description="📦 go package to check for a new GitHub release"
+LABEL maintainer="email@mattglei.ch"
+LABEL description="🌲 golang port of Delgan's python loguru"
 
 # Copying over all the files:
 COPY . /usr/src/app
