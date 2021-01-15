@@ -2,34 +2,36 @@ package logoru
 
 import "testing"
 
-const line1 = "Testing testing!"
+const line = "Testing testing!"
+
+var words = []interface{}{"Hello", "World!"}
 
 func TestDebug(t *testing.T) {
-	Debug(line1)
-	Debug("Hello", "World!")
+	Debug(line)
+	Debug(words...)
 }
 
 func TestInfo(t *testing.T) {
-	Info(line1)
-	Info("Hello", "World!")
+	Info(line)
+	Info(words...)
 }
 
 func TestSuccess(t *testing.T) {
-	Success(line1)
-	Success("Hello", "World!")
+	Success(line)
+	Success(words...)
 }
 
 func TestWarning(t *testing.T) {
-	Warning(line1)
-	Warning("Hello", "World!")
+	Warning(line)
+	Warning(words...)
 }
 
 func TestError(t *testing.T) {
-	Error(line1)
-	Error("Hello", "World!")
+	Error(line)
+	Error(words...)
 }
 
 func TestCritical(t *testing.T) {
-	Critical(line1)
-	Critical("Hello", "World!")
+	Critical(line)
+	Critical(words...)
 }
