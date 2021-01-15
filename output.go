@@ -18,9 +18,13 @@ func output(level string, levelColor *color.Color, message ...interface{}) error
 	msg = color.New(color.FgGreen).Sprint(genTime()) + " | "
 	msg = msg + levelColor.Sprint(level)
 	msg = msg + " | "
+
+	var joinedMessage string
 	for _, messageChunk := range message {
-		msg = strings.TrimLeft(fmt.Sprintf(msg+" %v", messageChunk), " ")
+		joinedMessage = strings.TrimLeft(fmt.Sprintf(joinedMessage+" %v", messageChunk), " ")
 	}
+	msg = msg + levelColor.Sprint(joinedMessage)
+
 	log.Println(msg)
 	return nil
 }
