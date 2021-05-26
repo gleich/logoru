@@ -1,6 +1,7 @@
 package logoru
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 	"testing"
@@ -11,10 +12,15 @@ import (
 )
 
 func TestOutput(t *testing.T) {
-	err := output("DEBUG", color.New(color.FgGreen, color.Bold), "Testing testing")
-	if err != nil {
-		t.Error(err)
-	}
+	debug_value := output("DEBUG", color.New(color.FgGreen, color.Bold), "Testing testing")
+	assert.True(
+		t, strings.HasSuffix(
+			debug_value,
+			"| DEBUG | Testing testing",
+		),
+		fmt.Sprintf("is value of %#v", debug_value),
+	)
+
 }
 
 func TestGenTime(t *testing.T) {

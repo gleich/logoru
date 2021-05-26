@@ -32,6 +32,7 @@ func TestError(t *testing.T) {
 }
 
 func TestCritical(t *testing.T) {
+	defer func() { recover() }()
 	Critical(line)
-	Critical(words...)
+	t.Error("Critical didn't panic")
 }
