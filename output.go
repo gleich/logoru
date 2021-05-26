@@ -11,7 +11,7 @@ import (
 )
 
 // Core output function for loguru
-func output(level string, levelColor *color.Color, message ...interface{}) error {
+func output(level string, levelColor *color.Color, message ...interface{}) string {
 	log.SetFlags(0)
 
 	var msg string
@@ -25,8 +25,7 @@ func output(level string, levelColor *color.Color, message ...interface{}) error
 	}
 	msg = msg + levelColor.Sprint(joinedMessage)
 
-	log.Println(msg)
-	return nil
+	return msg
 }
 
 // Generate the time output for loguru

@@ -17,48 +17,37 @@ var levels = []string{
 
 // Output a debugging message
 func Debug(msg ...interface{}) {
-	err := output(levels[0], color.New(color.FgBlue, color.Bold), msg...)
-	if err != nil {
-		log.Fatal(err)
-	}
+	out := output(levels[0], color.New(color.FgBlue, color.Bold), msg...)
+	log.Println(out)
 }
 
 // Output an info message
 func Info(msg ...interface{}) {
-	err := output(levels[1], color.New(color.FgWhite, color.Bold), msg...)
-	if err != nil {
-		log.Fatal(err)
-	}
+	out := output(levels[1], color.New(color.FgWhite, color.Bold), msg...)
+	log.Println(out)
 }
 
 // Output a success message
 func Success(msg ...interface{}) {
-	err := output(levels[2], color.New(color.FgGreen, color.Bold), msg...)
-	if err != nil {
-		log.Fatal(err)
-	}
+	out := output(levels[2], color.New(color.FgGreen, color.Bold), msg...)
+	log.Println(out)
 }
 
 // Output a warning message
 func Warning(msg ...interface{}) {
-	err := output(levels[3], color.New(color.FgYellow, color.Bold), msg...)
-	if err != nil {
-		log.Fatal(err)
-	}
+	out := output(levels[3], color.New(color.FgYellow, color.Bold), msg...)
+	log.Println(out)
+
 }
 
 // Output an error message
 func Error(msg ...interface{}) {
-	err := output(levels[4], color.New(color.FgRed, color.Bold), msg...)
-	if err != nil {
-		log.Fatal(err)
-	}
+	out := output(levels[4], color.New(color.FgRed, color.Bold), msg...)
+	log.Println(out)
 }
 
 // Output a critical message
 func Critical(msg ...interface{}) {
-	err := output(levels[5], color.New(color.FgWhite, color.BgRed, color.Bold), msg...)
-	if err != nil {
-		log.Fatal(err)
-	}
+	out := output(levels[5], color.New(color.FgWhite, color.BgRed, color.Bold), msg...)
+	log.Panicln(out)
 }
