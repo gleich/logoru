@@ -1,6 +1,9 @@
 package logoru
 
-import "testing"
+import (
+	"log"
+	"testing"
+)
 
 const line = "Testing testing!"
 
@@ -32,7 +35,12 @@ func TestError(t *testing.T) {
 }
 
 func TestCritical(t *testing.T) {
-	defer func() { recover() }()
+	defer func() {
+		err := recover()
+		if err != nil {
+			log.Panicln("Failed to recover", err)
+		}
+	}()
 	Critical(line)
 	t.Error("Critical didn't panic")
 }
