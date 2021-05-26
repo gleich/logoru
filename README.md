@@ -154,7 +154,7 @@ Output:
 func Critical(msg interface{})
 ```
 
-Output a critical message
+Output a critical message which will panic at the end.
 
 #### Example
 
@@ -165,8 +165,7 @@ package main
 import "github.com/Matt-Gleich/logoru"
 
 func main() {
-    logoru.Critical("Here is a critical message")
-    logoru.Critical("Hello", "World")
+    logoru.Critical("Here is a critical message") // Panic occurs
 }
 ```
 
@@ -179,8 +178,8 @@ Output:
 Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/logoru/blob/master/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
-## 👥 Contributors
 
+## 👥 Contributors
 
 - **[@Matt-Gleich](https://github.com/Matt-Gleich)**
 
