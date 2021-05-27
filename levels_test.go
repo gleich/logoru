@@ -38,7 +38,7 @@ func TestCritical(t *testing.T) {
 	defer func() {
 		err := recover()
 		if err != nil {
-			log.Panicln("Failed to recover", err)
+			log.Println("Had to recover (expected)")
 		}
 	}()
 	Critical(line)
