@@ -1,4 +1,4 @@
-module github.com/Matt-Gleich/logoru
+module github.com/gleich/logoru
 
 go 1.14
 

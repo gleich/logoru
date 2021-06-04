@@ -1,22 +1,22 @@
-<!-- DO NOT REMOVE - contributor_list:data:start:["Matt-Gleich", "ImgBotApp", "dependabot-preview[bot]"]:end -->
+<!-- DO NOT REMOVE - contributor_list:data:start:["gleich", "ImgBotApp", "dependabot-preview[bot]"]:end -->
 
 # logoru
 
 🌲 golang port of [Delgan's python loguru](https://github.com/Delgan/loguru)
 
-![build](https://github.com/Matt-Gleich/logoru/workflows/build/badge.svg)
-![test](https://github.com/Matt-Gleich/logoru/workflows/test/badge.svg)
-![lint](https://github.com/Matt-Gleich/logoru/workflows/lint/badge.svg)
+![build](https://github.com/gleich/logoru/workflows/build/badge.svg)
+![test](https://github.com/gleich/logoru/workflows/test/badge.svg)
+![lint](https://github.com/gleich/logoru/workflows/lint/badge.svg)
 
 ## 🚀 Install
 
 Run the following command in your terminal:
 
 ```txt
-go get -u github.com/Matt-Gleich/logoru
+go get -u github.com/gleich/logoru
 ```
 
-## 📝 Documentation [![GoDoc](https://godoc.org/github.com/Matt-Gleich/logoru?status.svg)](https://godoc.org/github.com/Matt-Gleich/logoru)
+## 📝 Documentation [![GoDoc](https://godoc.org/github.com/gleich/logoru?status.svg)](https://godoc.org/github.com/gleich/logoru)
 
 ### `func Debug`
 
@@ -32,7 +32,7 @@ Output a debugging message
 package main
 
 
-import "github.com/Matt-Gleich/logoru"
+import "github.com/gleich/logoru"
 
 func main() {
     logoru.Debug("Here is a debug message")
@@ -58,7 +58,7 @@ Output an info message
 package main
 
 
-import "github.com/Matt-Gleich/logoru"
+import "github.com/gleich/logoru"
 
 func main() {
     logoru.Info("Here is an info message")
@@ -84,7 +84,7 @@ Output a success message
 package main
 
 
-import "github.com/Matt-Gleich/logoru"
+import "github.com/gleich/logoru"
 
 func main() {
     logoru.Success("Here is a success message")
@@ -110,7 +110,7 @@ Output a warning message
 package main
 
 
-import "github.com/Matt-Gleich/logoru"
+import "github.com/gleich/logoru"
 
 func main() {
     logoru.Warning("Here is a warning message")
@@ -136,7 +136,7 @@ Output a error message
 package main
 
 
-import "github.com/Matt-Gleich/logoru"
+import "github.com/gleich/logoru"
 
 func main() {
     logoru.Error("Here is an error message")
@@ -162,7 +162,7 @@ Output a critical message which will panic at the end.
 package main
 
 
-import "github.com/Matt-Gleich/logoru"
+import "github.com/gleich/logoru"
 
 func main() {
     logoru.Critical("Here is a critical message") // Panic occurs
@@ -175,13 +175,13 @@ Output:
 
 ## 🙌 Contributing
 
-Before contributing please read the [CONTRIBUTING.md file](https://github.com/Matt-Gleich/logoru/blob/master/CONTRIBUTING.md)
+Before contributing please read the [CONTRIBUTING.md file](https://github.com/gleich/logoru/blob/master/CONTRIBUTING.md)
 
 <!-- DO NOT REMOVE - contributor_list:start -->
 
 ## 👥 Contributors
 
-- **[@Matt-Gleich](https://github.com/Matt-Gleich)**
+- **[@gleich](https://github.com/gleich)**
 
 - **[@ImgBotApp](https://github.com/ImgBotApp)**
 
